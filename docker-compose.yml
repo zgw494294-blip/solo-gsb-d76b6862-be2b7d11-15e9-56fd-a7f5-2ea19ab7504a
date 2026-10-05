@@ -1,0 +1,8 @@
+services:
+  sample-trigger:
+    build: .
+    image: sample-trigger:latest
+    container_name: sample-trigger
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
